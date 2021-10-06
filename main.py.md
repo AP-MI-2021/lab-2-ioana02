@@ -1,6 +1,6 @@
 def main():
 
-'''aratati ca un numar este palindrom sau nu
+'''1.Aratati ca un numar este palindrom sau nu
 '''
 def is_palindrome(n):
 	numar=n
@@ -23,7 +23,7 @@ def test_is_palindrome():
 
 
 
-'''Aratati daca un numar este prim sau nu 
+'''2.Aratati daca un numar este prim sau nu 
 '''
 def prime(n):
 	if n>1:
@@ -33,7 +33,7 @@ def prime(n):
 			else:
 				print(n,"n este prim")
 n= int(input("Dati un numar:"))
-prime(n)
+
 def test_is_prime():
 	assert is_prime(21) is False
 	assert is_prime(2) is True
@@ -43,7 +43,7 @@ def test_is_prime():
 
 
 
-'''Aratati daca un numar este sau nu antipalindrom
+'''3.Aratati daca un numar este sau nu antipalindrom
 '''
 def is_antipalindrome(n):
 
@@ -82,7 +82,7 @@ def test_is_antipalindrome():
 
 
 
-'''Aratati daca un numar este superprim sau nu 
+'''4.Aratati daca un numar este superprim sau nu 
 '''
 def is_superprime(n):
 
