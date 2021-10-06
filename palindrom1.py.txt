@@ -1,13 +1,25 @@
-#Determinati daca un numar este palindrom sau nu
-def is_palindrome(n):
-	x= int(n)
-	while x:
-		y=x%10+y*10
-                x=x/10
-	if y==n:
-		print("Da")
-	else:
-		print("Nu")
-z= int (input("Dati un numar:")
-is_palindrome(z)
+#Aratati daca un numar este superprim sau nu 
+def is_superprime(n):
+
+    clona = n
+    if n < 2:
+        return False
+    elif n % 2 == 0:
+        return False
+    else:
+        while clona != 0:
+            for i in range(3, clona//2):
+                if n % i == 0:
+                    return False
+            clona = clona//10
+    return True
+
+
+def test_is_superprime():
+    assert is_superprime(233) is True
+    assert is_superprime(2689) is False
+    assert is_superprime(37) is True
+    assert is_superprime(8234) is False
+    assert is_superprime(25) is True
+
 
