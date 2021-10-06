@@ -99,8 +99,8 @@ def is_superprime(n):
             clona = clona//10
     return True
 
-
 def test_is_superprime():
+
     assert is_superprime(233) is True
     assert is_superprime(2689) is False
     assert is_superprime(37) is True
