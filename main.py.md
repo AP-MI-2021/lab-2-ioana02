@@ -15,6 +15,7 @@ def is_palindrome(n):
 		return False
 
 def test_is_palindrome():
+
 	assert is_palindrome(121) is True	
 	assert is_palindrome(233) is False
 	assert is_palindrome(22) is True
@@ -35,6 +36,7 @@ def prime(n):
 n= int(input("Dati un numar:"))
 
 def test_is_prime():
+
 	assert is_prime(21) is False
 	assert is_prime(2) is True
 	assert is_prime(13) is True
@@ -112,4 +114,3 @@ print (is_palindrome(n))
 print (is_prime(n))
 print (is_antipalindrome(n))
 print (is_superprime(n))
-
