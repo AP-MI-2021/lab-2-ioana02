@@ -1,6 +1,4 @@
-
-def main():
-
+#modificare mod de rezolvare problema
 #aratati ca un numar este palindrom sau nu
 def is_palindrome(n):
 	numar=n
@@ -13,14 +11,12 @@ def is_palindrome(n):
 		return True
 	else
 		return False
-
 def test_is_palindrome():
 	assert is_palindrome(121) is True	
 	assert is_palindrome(233) is False
 	assert is_palindrome(22) is True
 	assert is_palindrome(150) is False
 	assert is_palindrome(334) is False
-
 
 
 #Aratati daca un numar este prim sau nu 
@@ -39,8 +35,6 @@ def test_is_prime():
 	assert is_prime(13) is True
 	assert is_prime(26) is False
 	assert is_prime(156) is False
-
-
 
 #Aratati daca un numar este sau nu antipalindrom
 def is_antipalindrome(n):
@@ -78,8 +72,6 @@ def test_is_antipalindrome():
     assert is_antipalindrome(55555) == False
     assert is_antipalindrome(22)==False
 
-
-
 #Aratati daca un numar este superprim sau nu 
 def is_superprime(n):
 
@@ -103,9 +95,3 @@ def test_is_superprime():
     assert is_superprime(37) is True
     assert is_superprime(8234) is False
     assert is_superprime(25) is True
- 
-main()
-print (is_palindrome(n))
-print (is_prime(n))
-print (is_antipalindrome(n))
-print (is_superprime(n))
