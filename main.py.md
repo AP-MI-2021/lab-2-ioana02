@@ -1,7 +1,7 @@
-
 def main():
 
-#aratati ca un numar este palindrom sau nu
+'''aratati ca un numar este palindrom sau nu
+'''
 def is_palindrome(n):
 	numar=n
 	rasturnat=0
@@ -23,7 +23,8 @@ def test_is_palindrome():
 
 
 
-#Aratati daca un numar este prim sau nu 
+'''Aratati daca un numar este prim sau nu 
+'''
 def prime(n):
 	if n>1:
 		for i in range(2,n):
@@ -42,7 +43,8 @@ def test_is_prime():
 
 
 
-#Aratati daca un numar este sau nu antipalindrom
+'''Aratati daca un numar este sau nu antipalindrom
+'''
 def is_antipalindrome(n):
 
     clona=n
@@ -80,7 +82,8 @@ def test_is_antipalindrome():
 
 
 
-#Aratati daca un numar este superprim sau nu 
+'''Aratati daca un numar este superprim sau nu 
+'''
 def is_superprime(n):
 
     clona = n
@@ -109,3 +112,4 @@ print (is_palindrome(n))
 print (is_prime(n))
 print (is_antipalindrome(n))
 print (is_superprime(n))
+
