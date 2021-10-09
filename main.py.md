@@ -108,9 +108,7 @@ def test_is_superprime():
     assert is_superprime(37) is True
     assert is_superprime(8234) is False
     assert is_superprime(25) is True
- 
+print (is_palindrome(), is_prime(), is_antipalindrome(), is_superprime())
 main()
-print (is_palindrome(n))
-print (is_prime(n))
-print (is_antipalindrome(n))
-print (is_superprime(n))
+
+
