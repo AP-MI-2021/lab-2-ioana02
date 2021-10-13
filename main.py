@@ -5,20 +5,15 @@ def is_prime(x):
     return - True daca x e prim, False in caz contrar
     """
     if x < 2: return False
-    for i in range(2, x//2+1):
+    for i in range(2, x // 2 + 1):
         if x % i == 0: return False
     return True
-    
+
 
 def test_is_prime():
     assert is_prime(0) == False
     assert is_prime(2) == True
     assert is_prime(997) == True
-
-
-test_is_prime()
-
-
 
 
 def is_palindrome(n) -> bool:
@@ -42,15 +37,12 @@ def test_is_palindrome():
     assert is_palindrome(481579) == False
 
 
-test_is_palindrome()
-
-
-
 '''
   Aratati daca un numar este superprim sau nu
 '''
-def is_superprime(n):
 
+
+def is_superprime(n):
     clona = n
     if n < 2:
         return False
@@ -58,10 +50,10 @@ def is_superprime(n):
         return False
     else:
         while clona != 0:
-            for i in range(3, clona//2):
+            for i in range(3, clona // 2):
                 if n % i == 0:
                     return False
-            clona = clona//10
+            clona = clona // 10
     return True
 
 
@@ -73,23 +65,25 @@ def test_is_superprime():
     assert is_superprime(25) is True
 
 
-test is_superprime()
-
-
-def input_isprime():
+def input_is_prime():
     x = int(input("Introduceti numarul "))
-    print(isprime(x))
+    print(is_prime(x))
+
 
 def input_is_palindrome():
     x = int(input("Introduceti numarul "))
     print(is_palindrome(x))
 
+
 def input_is_superprime():
-    x= int(input("Introduceti numarul"))
+    x = int(input("Introduceti numarul"))
     print(is_superprime(x))
 
 
 def main():
+    test_is_prime()
+    test_is_palindrome()
+    test_is_superprime()
     while True:
         print("""
         Alegeti functia:
@@ -99,11 +93,16 @@ def main():
         4) stop program
         """)
         option = int(input("Optiune: "))
-        if option == 1: input_is_prime()
-        elif option == 2: input_is_palindrome()
-        elif option == 3: input_is_superprime()
-        elif option == 4: break
-        else: print("Optiune invalida")
+        if option == 1:
+            input_is_prime()
+        elif option == 2:
+            input_is_palindrome()
+        elif option == 3:
+            input_is_superprime()
+        elif option == 4:
+            break
+        else:
+            print("Optiune invalida")
 
 
 main()
